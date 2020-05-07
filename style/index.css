@@ -21,6 +21,12 @@ font: inherit;
 vertical-align: baseline;  
 }
 
+html{
+    font-size: 62.5%;
+    background-color:lightgray;
+    font-family: monospace ;
+}
+
 /* Universal Selector */
 *{
     box-sizing: border-box;
@@ -39,22 +45,21 @@ body{
     align-content: flex-end;
 
 }
-
-
-
-html{
-    font-size: 120%;
-    background-color:lightgray;
-    font-family: monospace ;
+div a{
+    color:black;
+    font-size:2rem;
 }
 
 div h1{
     font-weight: bold;
-    font-size: larger;
+    font-size: 3rem;
     text-align: center;
     padding: 10%;
     border: 5px solid black;
     background-color: darkgray;
+}
+div h2{
+    font-size: 2rem;
 }
 
 .projects{
@@ -66,8 +71,11 @@ div {
     text-align: center;
 }
 
+
+
 p{
     color:rgba(0, 0, 255, 0.625);
+    font-size: 1.5rem;
 }
 
 #aboutMe{
@@ -87,6 +95,7 @@ img{
 }
 
 footer{
+    font-size: 2rem;
     margin:5%;
     padding: 5%;
     border: 3px solid black;
@@ -95,4 +104,56 @@ footer{
 
 footer h3{
     margin: 1%;
+}
+
+@media (max-width: 800px){
+    .box1{
+        max-width: 80%;
+        font-size: 1.75rem;
+    }
+
+    div h1{
+        font-size: 3rem;
+        padding: 5%;
+        border: 4px solid black;
+    }
+    div a{
+        font-size: 1.75rem;
+        align-items: center;
+        background-color: darkgray;
+    }
+    div h2{
+        font-size: 2rem;
+    }
+    footer {
+        font-size: 1.75rem;
+    }
+    button{
+        background-color: white;
+    }
+}
+
+@media (max-width: 500px){
+    .box1{
+        max-width: 80%;
+        font-size: 1.75rem;
+    }
+
+    div h1{
+        font-size: 2rem;
+        padding: 5%;
+        border: 3px solid black;
+    }
+    div a{
+        font-size: 1.5rem;
+        align-items: center;
+        border: 2px solid black;
+        align-items: flex-end;
+    }
+    div h2{
+        font-size: 1.75rem;
+    }
+    footer {
+        font-size: 1.5rem;
+    }
 }
